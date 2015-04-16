@@ -8,9 +8,9 @@ library("ggmap")
 
 postcodeLookup <- function(address="Buckingham Palace") {
   # get the longitude and latitude of the incomplete address
-  getLonlat <- as.numeric(geocode(address))
+  lonlat <- as.numeric(geocode(address))
   # request full address using reverse geocode
-  fulladdress <- revgeocode(getLonlat, output="more")
+  fulladdress <- revgeocode(lonlat, output="more")
   # convert postal_code from factor to character vector
   postal_code <- as.character(fulladdress$postal_code)
   #return postcode
