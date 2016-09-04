@@ -1,3 +1,4 @@
+
 # Simple R function to retrieve postcode using google maps API
 # when only the street address is known. Useful, for example, when 
 # participants in origin-detination surveys do not provide the
